@@ -1,0 +1,12 @@
+{
+    "name": "form-ui-generator",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/toothlessdev/form-ui-generator.git",
+    "author": "toothlessdev <toothless042@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ]
+}
