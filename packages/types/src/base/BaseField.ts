@@ -13,14 +13,10 @@ export interface BaseField<T extends ComponentType> {
     component: ComponentType;
     required: boolean;
 
-    defaultValue: T extends "Input" | "TextArea"
-        ? string
-        : T extends "Select"
+    defaultValue: T extends "Input" | "TextArea" | "Radio" | "Select"
         ? string
         : T extends "Checkbox"
         ? string[]
-        : T extends "Radio"
-        ? string
         : T extends "SingleSlider"
         ? number
         : T extends "DoubleSlider"
