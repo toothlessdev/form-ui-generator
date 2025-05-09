@@ -1,5 +1,5 @@
 import type { BaseField } from "../base/BaseField";
-export interface SingleSliderField extends BaseField {
+export interface SingleSliderField extends BaseField<"SingleSlider"> {
     component: "SingleSlider";
     min: number;
     max: number;

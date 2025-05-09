@@ -7,13 +7,29 @@ export type ComponentType =
     | "DoubleSlider"
     | "TextArea";
 
-export interface BaseField {
+export interface BaseField<T extends ComponentType> {
     id: string;
     label: string;
     component: ComponentType;
-
     required: boolean;
-    defaultValue: any;
-    visibleIf: { fieldId: string; equals: any };
+
+    defaultValue: T extends "Input" | "TextArea"
+        ? string
+        : T extends "Select"
+        ? string
+        : T extends "Checkbox"
+        ? string[]
+        : T extends "Radio"
+        ? string
+        : T extends "SingleSlider"
+        ? number
+        : T extends "DoubleSlider"
+        ? [number, number]
+        : never;
+
+    visibleIf: {
+        fieldId: string;
+        equals: any;
+    };
     disabled: boolean;
 }
