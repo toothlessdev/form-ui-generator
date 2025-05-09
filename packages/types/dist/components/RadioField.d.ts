@@ -1,0 +1,9 @@
+import type { BaseField } from "../base/BaseField";
+export interface RadioField extends BaseField {
+    component: "Radio";
+    options: {
+        label: string;
+        value: string;
+    }[];
+    inline: boolean;
+}

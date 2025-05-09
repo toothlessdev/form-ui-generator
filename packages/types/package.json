@@ -1,0 +1,13 @@
+{
+    "name": "@form-ui-generator/types",
+    "version": "1.0.0",
+    "license": "MIT",
+    
+    "main": "index.ts",
+    "module": "index.ts",
+    "types": "dist/index.d.ts",
+    
+    "scripts": {
+        "build" : "tsc --build"
+    }
+}
