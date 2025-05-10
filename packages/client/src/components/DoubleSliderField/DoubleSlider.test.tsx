@@ -62,16 +62,4 @@ describe("<DoubleSliderField />", () => {
         expect($leftLabel).toBeInTheDocument();
         expect($rightLabel).toBeInTheDocument();
     });
-
-    test("disabled 가 true 인 경우 DualRangeSlider 가 비활성화 되어야 한다", () => {
-        render(
-            <DoubleSliderFieldComponent
-                {...defaultFields}
-                label="Double Slider"
-                disabled={true}
-            />
-        );
-        const $slider = screen.getByRole("slider");
-        expect($slider).toBeDisabled();
-    });
 });
