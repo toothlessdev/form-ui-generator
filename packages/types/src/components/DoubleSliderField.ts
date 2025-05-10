@@ -10,8 +10,5 @@ export interface DoubleSliderField extends BaseField<"DoubleSlider"> {
     minLabel: string;
     maxLabel: string;
 
-    minValueLabel: string;
-    maxValueLabel: string;
-
-    showLabels: boolean;
+    markers: string[];
 }
