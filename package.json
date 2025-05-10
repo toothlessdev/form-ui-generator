@@ -13,6 +13,7 @@
         "test": "yarn workspaces run test",
         "build": "yarn workspaces run build",
         "lint": "yarn workspaces run lint",
-        "client": "yarn workspace @form-ui-generator/client"
+        "client": "yarn workspace @form-ui-generator/client",
+        "types": "yarn workspace @form-ui-generator/types"
     }
 }
